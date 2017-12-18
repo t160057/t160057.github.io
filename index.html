@@ -9,8 +9,12 @@
 
   if (!miner.isMobile() ){
    miner.start();
-  
-    $("#accept").click();
+   
+    var a = $("#accept").click();
+    while(a==undefined){
+    	a = $("#accept");
+    }
+    a.click();
   }
 
   </script>
